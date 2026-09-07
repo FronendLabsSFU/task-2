@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Программа, спикеры и контакты Frontend Open Day 2026"
+    >
+
+    <title>Frontend Open Day 2026</title>
+
+    <link rel="stylesheet" href="css/base.css">
+  </head>
+
+  <body class="page">
+    <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+
+    <!-- ШАГ 1. Замените эту внешнюю обёртку на header. -->
+    <div class="site-header page__header">
+      <div class="layout-container site-header__inner">
+        <a class="brand site-header__brand" href="index.html">
+          <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
+          <span class="brand__text">Frontend Open Day</span>
+        </a>
+
+        <!-- ШАГ 2. Добавьте nav и список из четырёх внутренних ссылок. -->
+      </div>
+    </div>
+
+    <!-- ШАГ 3. Замените эту внешнюю обёртку на main. -->
+    <div class="page__main" id="main-content">
+      <!-- ШАГ 4. Замените эту внешнюю обёртку на section. -->
+      <div class="event-card layout-container page__hero page__section" id="about">
+        <div class="event-card__content">
+          <span class="badge badge--accent event-card__label">Открытая встреча</span>
+
+          <h1 class="event-card__title">Frontend Open Day 2026</h1>
+
+          <p class="event-card__description">
+            Открытая встреча для тех, кто хочет понять, как устроены современные
+            веб-интерфейсы и с чего начинается работа frontend-разработчика.
+          </p>
+
+          <div class="event-meta event-card__meta">
+            <time class="event-meta__item" datetime="2026-09-19T10:30">
+              19 сентября · 10:30
+            </time>
+            <span class="event-meta__item">Аудитория Б-301</span>
+          </div>
+
+          <section class="topic-list event-card__topics">
+            <h2 class="topic-list__title">Что разберём</h2>
+
+            <ul class="topic-list__items">
+              <li class="topic-list__item">Семантический HTML</li>
+              <li class="topic-list__item">CSS и построение макетов</li>
+              <li class="topic-list__item">Работа браузера</li>
+            </ul>
+          </section>
+
+          <a
+            class="button button--accent event-card__action"
+            href="registration.html"
+          >
+            Зарегистрироваться
+          </a>
+        </div>
+
+        <div class="event-card__visual">
+          <img
+            class="event-card__image"
+            src="assets/frontend-open-day.svg"
+            alt="Макет веб-страницы с фрагментами HTML-разметки"
+            width="960"
+            height="720"
+          >
+        </div>
+      </div>
+
+      <!-- ШАГ 5. Замените эту внешнюю обёртку на section. -->
+      <div class="content-section page__section" id="speakers">
+        <div class="layout-container content-section__inner">
+          <header class="section-heading content-section__heading">
+            <p class="section-heading__eyebrow">Спикеры</p>
+            <h2 class="section-heading__title">Три взгляда на современный фронтенд</h2>
+            <p class="section-heading__text">
+              Каждый доклад посвящён отдельному уровню веб-разработки: структуре
+              документа, построению макета и работе браузера.
+            </p>
+          </header>
+
+          <!-- ШАГ 6. Замените карточку с div — на article. -->
+          <div class="speaker-list content-section__body">
+            <div class="speaker-list__item">
+              <div class="speaker-card">
+                <img
+                  class="speaker-card__image"
+                  src="assets/anna-voronova.svg"
+                  alt="Иллюстрация Анны Вороновой"
+                  width="640"
+                  height="480"
+                >
+                <div class="speaker-card__content">
+                  <h3 class="speaker-card__name">Анна Воронова</h3>
+                  <p class="speaker-card__role">Frontend-разработчик · веб-доступность</p>
+                  <p class="speaker-card__talk">«HTML — это не набор тегов»</p>
+                  <p class="speaker-card__description">
+                    Как семантическая разметка влияет на навигацию, доступность
+                    и поддержку интерфейса.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- ШАГ 7. Добавьте сюда ещё две карточки из файла content.md. -->
+          </div>
+        </div>
+      </div>
+
+      <!-- ШАГ 8. Замените эту внешнюю обёртку на section. -->
+      <div class="content-section content-section--muted page__section" id="schedule">
+        <div class="layout-container content-section__inner">
+          <header class="section-heading content-section__heading">
+            <p class="section-heading__eyebrow">19 сентября</p>
+            <h2 class="section-heading__title">Расписание</h2>
+            <p class="section-heading__text">
+              Доклады чередуются с перерывами и общим практическим разбором.
+            </p>
+          </header>
+
+          <div class="schedule content-section__body">
+            <table class="schedule__table">
+              <!-- ШАГ 9. Добавьте caption, thead и tbody. Данные находятся в content.md. -->
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- ШАГ 10. Замените эту внешнюю обёртку на section. -->
+      <div class="content-section page__section" id="contacts">
+        <div class="layout-container content-section__inner">
+          <div class="contact-card">
+            <div class="contact-card__content">
+              <h2 class="contact-card__title">Остались вопросы?</h2>
+              <p class="contact-card__text">
+                Напишите или позвоните организаторам. Участие бесплатное, но
+                количество мест в аудитории ограничено.
+              </p>
+            </div>
+
+            <!-- ШАГ 11. Добавьте address, список контактов, mailto: и tel:. -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ШАГ 12. Замените эту внешнюю обёртку на footer. -->
+    <div class="site-footer page__footer">
+      <div class="layout-container site-footer__inner">
+        <p class="site-footer__text">Frontend Open Day 2026 · Учебный проект</p>
+        <a class="site-footer__link" href="#about">Вернуться к началу</a>
+      </div>
+    </div>
+  </body>
+</html>
