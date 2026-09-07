@@ -17,7 +17,7 @@
     <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
 
     <!-- ШАГ 1. Замените эту внешнюю обёртку на header. -->
-    <div class="site-header page__header">
+    <header class="site-header page__header">
       <div class="layout-container site-header__inner">
         <a class="brand site-header__brand" href="index.html">
           <span class="brand__mark" aria-hidden="true">&lt;/&gt;</span>
@@ -25,13 +25,21 @@
         </a>
 
         <!-- ШАГ 2. Добавьте nav и список из четырёх внутренних ссылок. -->
+        <nav class="navigation site-header__navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#about" class="navigation__link">О событии</a></li>
+            <li class="navigation__item"><a href="#speakers" class="navigation__link">Спикеры</a></li>
+            <li class="navigation__item"><a href="#schedule" class="navigation__link">Расписание</a></li>
+            <li class="navigation__item"><a href="#contacts" class="navigation__link">Контакты</a></li>
+          </ul>
+        </nav>
       </div>
-    </div>
+    </header>
 
     <!-- ШАГ 3. Замените эту внешнюю обёртку на main. -->
-    <div class="page__main" id="main-content">
+    <main class="page__main" id="main-content">
       <!-- ШАГ 4. Замените эту внешнюю обёртку на section. -->
-      <div class="event-card layout-container page__hero page__section" id="about">
+      <section class="event-card layout-container page__hero page__section" id="about">
         <div class="event-card__content">
           <span class="badge badge--accent event-card__label">Открытая встреча</span>
 
@@ -76,10 +84,10 @@
             height="720"
           >
         </div>
-      </div>
+      </section>
 
       <!-- ШАГ 5. Замените эту внешнюю обёртку на section. -->
-      <div class="content-section page__section" id="speakers">
+      <section class="content-section page__section" id="speakers">
         <div class="layout-container content-section__inner">
           <header class="section-heading content-section__heading">
             <p class="section-heading__eyebrow">Спикеры</p>
@@ -91,7 +99,7 @@
           </header>
 
           <!-- ШАГ 6. Замените карточку с div — на article. -->
-          <div class="speaker-list content-section__body">
+          <article class="speaker-list content-section__body">
             <div class="speaker-list__item">
               <div class="speaker-card">
                 <img
@@ -114,12 +122,12 @@
             </div>
 
             <!-- ШАГ 7. Добавьте сюда ещё две карточки из файла content.md. -->
-          </div>
+          </article>
         </div>
-      </div>
+      </section>
 
       <!-- ШАГ 8. Замените эту внешнюю обёртку на section. -->
-      <div class="content-section content-section--muted page__section" id="schedule">
+      <section class="content-section content-section--muted page__section" id="schedule">
         <div class="layout-container content-section__inner">
           <header class="section-heading content-section__heading">
             <p class="section-heading__eyebrow">19 сентября</p>
@@ -135,10 +143,10 @@
             </table>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- ШАГ 10. Замените эту внешнюю обёртку на section. -->
-      <div class="content-section page__section" id="contacts">
+      <section class="content-section page__section" id="contacts">
         <div class="layout-container content-section__inner">
           <div class="contact-card">
             <div class="contact-card__content">
@@ -152,15 +160,15 @@
             <!-- ШАГ 11. Добавьте address, список контактов, mailto: и tel:. -->
           </div>
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- ШАГ 12. Замените эту внешнюю обёртку на footer. -->
-    <div class="site-footer page__footer">
+    <footer class="site-footer page__footer">
       <div class="layout-container site-footer__inner">
         <p class="site-footer__text">Frontend Open Day 2026 · Учебный проект</p>
         <a class="site-footer__link" href="#about">Вернуться к началу</a>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
